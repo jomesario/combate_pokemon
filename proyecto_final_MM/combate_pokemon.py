@@ -148,7 +148,7 @@ def fight(player_profile, enemy_pokemon):
             else:
                 print_and_wait("No tienes pociones, pierdes turno",2)
         elif action == "P":
-            if player_profile["pokemon_inv"] >= 6:
+            if len(player_profile["pokemon_inv"]) >= 6:
                 print_and_wait("Ya tienes 6 pokemons en tu equipo, pierdes turno, avaricioso.",2)
             else:
                 if player_profile["pokeballs"] > 0:
